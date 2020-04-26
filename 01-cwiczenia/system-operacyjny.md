@@ -30,6 +30,9 @@
    https://www.netacad.com/courses/packet-tracer
 
 4. Dlaczego umiejętnosci z zakresu sieci komputerowych mogą mi się przydać? :)
+-zabezpieczanie sieci domowych
+-tworzenie sieci "pod siebie" - skonfigurowanych jak się chce
+-zrozumienie, jak działają sieci komputerowe 
 
 
 ### Charakterystyka systemu operacyjnego
@@ -52,8 +55,8 @@
 | Adres IP      | 10.0.2.15        | przydzielony przez DHCP |
 | Maska podsieci| 10.0.2.15/**24** | **255.255.255.0**    |
 | Brama         | 10.0.2.2         | default from route table |
-| DNS 1         | 10.10.4.204      | cat /etc/resolv.conf     |
-| DNS 2         | 1.1.1.1          | nslookup uek.krakow.pl   |
+| DNS 1         | 10.10.4.204      | cat /etc/resolv.conf - miejsce z którego dns sprawdzamy     |
+| DNS 2         | 1.1.1.1          | nslookup uek.krakow.pl  - sprawdza adres ip domeny |
 
 ### Schemat sieci
 
