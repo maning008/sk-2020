@@ -31,6 +31,7 @@ Weryfikacja połączenia
 Polecenie
 ping <adres>
 ```
+```
 
 Efekt
 jak ping dzizła to jest połączenie
