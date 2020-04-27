@@ -35,6 +35,7 @@ ping <adres>
 Efekt
 jak ping dzizła to jest połączenie
 ```
+```
 
 Statyczna konfiguracja parametrów połączenia
 Wejściowe parametry sieci
@@ -55,7 +56,7 @@ Wejściowe parametry sieci
 Weryfikacja połączenia
 
 Polecenie
-
+```
 ```
 
 Efekt
@@ -103,5 +104,5 @@ ip addr flush eth0 - usuwa konfiguracje z eth0
 | DOWN -> Wyłączenie interfejsu sieciowego| ip link eth1 down | tutaj eth1 jako interface w cwiczeniu, moze byc którykolwiek |
 | Sprawdzenie obecnych parametrów | | |
 | lista wszystkich interfejsów | ip addr | |
-| Które interfejsy jakie porty słuchają | | |
+| Które interfejsy jakie porty słuchają | netstat | -ltpn ładnie wyświetli - co znaczy każde googluj lub help|
 
