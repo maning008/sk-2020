@@ -17,12 +17,13 @@
    * [Linux CentOS](https://www.centos.org/)
    * Windows 
 
-2. Sprawdź oraz przygotuj charakterystykę dla przykładowego urządzenia w Twojej sieci domowej
-   * Adres
-   * Maska
-   * Adres bramy
-   * DNS 1
-   * DNS 2
+2. Sprawdź oraz przygotuj charakterystykę dla przykładowego urządzenia w Twojej sieci domowej -  **WINODWS**
+
+   * Adres - 192.168.1.102
+   * Maska - 255.255.255.0
+   * Adres bramy - 192.168.1.100
+   * DNS 1 188.117.188.117
+   * DNS 2 8.8.8.8
   
     Przygotuj dokumentację graficzną Twojej sieci domowej, uwzględnij adresy i urządzenia
 
@@ -55,8 +56,8 @@
 | Adres IP      | 10.0.2.15        | przydzielony przez DHCP |
 | Maska podsieci| 10.0.2.15/**24** | **255.255.255.0**    |
 | Brama         | 10.0.2.2         | default from route table |
-| DNS 1         | 10.10.4.204      | cat /etc/resolv.conf - miejsce z którego dns sprawdzamy     |
-| DNS 2         | 1.1.1.1          | nslookup uek.krakow.pl  - sprawdza adres ip domeny |
+| DNS 1         | 188.117.188.117      | cat /etc/resolv.conf - miejsce z którego dns sprawdzamy     |
+| DNS 2         | 8.8.8.8          | nslookup uek.krakow.pl  - sprawdza adres ip domeny |
 
 ### Schemat sieci
 
