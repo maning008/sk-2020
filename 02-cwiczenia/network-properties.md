@@ -19,8 +19,8 @@ Wejściowe parametry sieci
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
 |   PC 1 |  
-| IP - address  | 10.0.15.4 | |
-| MASKA  | /24 (255.255.255.0) | |
+| IP - address  | 10.0.15.4 | ip addr add <adres> - patrz ściąga |
+| MASKA  | /24 (255.255.255.0) | jak wyżej |
 |   |  | |
 | PC 2  |  | |
 | IP - address  | 10.0.15.6 | |
@@ -29,11 +29,11 @@ Wejściowe parametry sieci
 Weryfikacja połączenia
 
 Polecenie
-```
+ping <adres>
 ```
 
 Efekt
-```
+jak ping dzizła to jest połączenie
 ```
 
 Statyczna konfiguracja parametrów połączenia
@@ -47,15 +47,15 @@ Wejściowe parametry sieci
 |   |  | |
 | PC 2  |  | |
 | IP - address  | 192.168.10.11 | |
-| MASKA  | 255.255.128.0 | |
+| MASKA  | 255.255.128.0 | różne maski - połączenia nie działają |
 | PC 2  |  | |
-| IP - address  | 172.16.100.100 | |
+| IP - address  | 172.16.100.100 | różne adresy - połączenia nie działają |
 | MASKA  | 255.255.0.0 | |
 
 Weryfikacja połączenia
 
 Polecenie
-```
+
 ```
 
 Efekt
@@ -87,17 +87,21 @@ Efekt
 
 ### Utrwalenie konfiguracji
 
-Dlaczego? Jak? Co? :)
+w /etc/network/interfaces zmienic dhcp na static i niżej wpisać:
+address <adres>
+netmask <maska>
+hostname localhost
 
 ### Warto wiedzieć
+ip addr flush eth0 - usuwa konfiguracje z eth0
 
 -------------------------
 | Parametr | wartość | komentarz(opcionalny) |
 | ------------- |:-------------:| -----:|
-| Lokalizacja pliku z konfiguracją sieci| | |
-| UP -> Wyłączenie interfejsu sieciowego| | |
-| DOWN -> Włączenie interfejsu sieciowego| | |
+| Lokalizacja pliku z konfiguracją sieci| /etc/network/interfaces | |
+| UP -> Włączenie interfejsu sieciowego| ip link eth1 up | jak niżej |
+| DOWN -> Wyłączenie interfejsu sieciowego| ip link eth1 down | tutaj eth1 jako interface w cwiczeniu, moze byc którykolwiek |
 | Sprawdzenie obecnych parametrów | | |
-| lista wszystkich interfejsów | | |
+| lista wszystkich interfejsów | ip addr | |
 | Które interfejsy jakie porty słuchają | | |
 
