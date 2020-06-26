@@ -39,6 +39,6 @@ Jaki parametry konfiguracji można ustawić z wykorzystaniem DHCP
 | porzucanie dzierżawy adresu v2|  |          |
 
 
-## Materiały
+## Materiały 
 
 * https://kb.isc.org/docs/isc-dhcp-44-manual-pages-dhcpdconf
