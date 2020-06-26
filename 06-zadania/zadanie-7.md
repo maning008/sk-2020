@@ -19,11 +19,11 @@ Dysponująć siecią o adresie ``192.168.100.0/24`` dokonaj podziału podsieci 
 
 2^(32 - dlugość maski) - 2 >= wymagana ilosć hostów
 
-2^(32-26) - 2 = 62 za mało
-2^(32-25) - 2 = 126 >= OK
+2^(32-26) - 2 = 62 
+2^(32-25) - 2 = 126 >= 64
 
-2^(32-28) -2 = 14 za mało
-2^(32-27) -2 = 30 >= 16 OK
+2^(32-28) -2 = 14 
+2^(32-27) -2 = 30 >= 16 
 
 | Podsiec   | Adres podsieci | Host min     | Host max      | Adres rozgłoszeniowy |
 | -------------     |:-------------: | -----:       | -----:        | -----:    |
